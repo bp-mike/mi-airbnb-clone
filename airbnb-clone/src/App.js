@@ -1,9 +1,11 @@
+import React from 'react';
 import './App.css';
-import Header from './Header';
-import Home from './Home';
+import Home from './Home'
+import Header from './Header'
 import Footer from './Footer'
-import { BrowserRouter as Router, Switch, Route} from 'react-router-dom'
-import SearchResults from './SearchResults'
+import SearchPage from './SearchPage'
+
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
@@ -14,16 +16,16 @@ function App() {
         <Header />
         
         <Switch>
-            <Route path='/search'>
-              <SearchResults />
-            </Route>
-            <Route path='/'>
-              <Home />
-            </Route>
+          <Route path="/search">
+            <SearchPage />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
         </Switch>
-
+        
         <Footer />
-      </Router>
+      </ Router>
     </div>
   );
 }

@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './Footer.css'
 
-function Footer(){
+function Footer() {
     return (
         <div className='footer'>
-            <p>© 2021 Airbnb clone No rights reserved - thi is a demo</p>
-            <p>privacy . Terms . Sitemap . Company Details</p>
+            <p>© 2020 Airbnb clone! No rights reserved - this is a demo!</p>
+            <p>Privacy · Terms · Sitemap · Company Details</p>
         </div>
     )
 }
